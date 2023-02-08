@@ -5,6 +5,7 @@ import LineGradient from './component/linegradient/linegradient';
 import MySkills from './component/myskills.=/myskills';
 import Navbar from './component/navbar/navbar';
 import Projects from './component/projects/projects';
+import Testimonials from './component/testimonials/testimonials';
 import useMediaQuery from './hooks/useMediaQuery';
 
 const App = () => {
@@ -44,6 +45,10 @@ const App = () => {
       <LineGradient />
       <div className='w-5/6 mx-auto'>
         <Projects />
+      </div>
+      <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'>
+        <Testimonials />
       </div>
     </div>
   );
