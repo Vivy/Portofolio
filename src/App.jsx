@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import Contact from './component/contact/contact';
 import DotGroup from './component/dotgroup/dotgroup';
+import Footer from './component/footer/footer';
 import Landing from './component/landing/landing';
 import LineGradient from './component/linegradient/linegradient';
-import MySkills from './component/myskills.=/myskills';
+import MySkills from './component/myskills/myskills';
 import Navbar from './component/navbar/navbar';
 import Projects from './component/projects/projects';
 import Testimonials from './component/testimonials/testimonials';
@@ -50,6 +52,11 @@ const App = () => {
       <div className='w-5/6 mx-auto md:h-full'>
         <Testimonials />
       </div>
+      <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'>
+        <Contact />
+      </div>
+      <Footer />
     </div>
   );
 };
