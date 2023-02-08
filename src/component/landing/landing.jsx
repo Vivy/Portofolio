@@ -5,13 +5,14 @@ import SocialMediaIcons from '../socialmedia/socialmediaicons';
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
+
   return (
     <section
       id='home'
       className='md:flex md:justify-between md:items-center md:h-full gap-16 py-10'
     >
       {/* {image section} */}
-      <div className=' md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32'>
+      <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32'>
         {isAboveMediumScreens ? (
           <div
             className='relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -33,7 +34,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
       {/* {main section} */}
 
-      <div className='z-30 basis2/5 mt-12 md:mt-32'>
+      <div className='z-30 basis-2/5 mt-12 md:mt-32'>
         {/* {headings} */}
         <motion.div
           initial='hidden'

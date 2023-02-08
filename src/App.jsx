@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import DotGroup from './component/dotgroup/dotgroup';
 import Landing from './component/landing/landing';
+import LineGradient from './component/linegradient/linegradient';
+import MySkills from './component/myskills.=/myskills';
 import Navbar from './component/navbar/navbar';
 import useMediaQuery from './hooks/useMediaQuery';
 
@@ -17,6 +19,7 @@ const App = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   return (
     <div className='app bg-deep-blue'>
       <Navbar
@@ -31,8 +34,12 @@ const App = () => {
             setSelectedPage={setSelectedPage}
           />
         )}
+        <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <Landing setSelectedPage={setSelectedPage} />
+      <LineGradient />
+      <div className='w-5/6  mx-auto md:h-full'>
+        <MySkills />
+      </div>
     </div>
   );
 };
